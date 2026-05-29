@@ -21,11 +21,11 @@ func main() {
 	fmt.Printf("IMC : %.2f\n", imc)
 
 	switch {
-	case imc < IMCMaigreur:
+	case imc <= IMCMaigreur:
 		fmt.Println("Catégorie : Maigreur")
-	case imc < IMCNormal:
+	case imc <= IMCNormal:
 		fmt.Println("Catégorie : Normal")
-	case imc < IMCSurpoids:
+	case imc <= IMCSurpoids:
 		fmt.Println("Catégorie : Surpoids")
 	default:
 		fmt.Println("Catégorie : Obésité")
